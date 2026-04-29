@@ -23,7 +23,7 @@ echo "Отчество:" . PHP_EOL;
     $fullName = $surname.' '.$name.' '. $patronymic; 
     $surnameAndInitials = $surname .' '.  mb_substr($name, 0, 1, 'UTF-8').'.'.mb_substr($patronymic, 0, 1, 'UTF-8').'.';
     
-echo "Полное имя: "."'". $fullName."'", PHP_EOL;
+echo "Полное имя: ".$fullName, PHP_EOL;
 $fio = mb_substr($surname, 0, 1, 'UTF-8') . mb_substr($name, 0, 1, 'UTF-8') . mb_substr($patronymic, 0, 1, 'UTF-8');
-echo "Фамилия и инициалы: "."'". $surnameAndInitials."'", PHP_EOL; 
-echo "Аббревиатура: "."'". $fio."'", PHP_EOL;  
+echo "Фамилия и инициалы: ".$surnameAndInitials, PHP_EOL; 
+echo "Аббревиатура: ".$fio, PHP_EOL; 
